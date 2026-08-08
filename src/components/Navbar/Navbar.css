@@ -1,0 +1,176 @@
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+
+    background: rgba(245,241,234,.90);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom:1px solid var(--border-color);
+
+    padding:18px 0;
+
+    transition:var(--transition);
+
+}
+
+.navbar-brand{
+
+    font-family:var(--heading-font);
+    font-size: var(--logo-size) !important;
+    font-weight:var(--fw-bold);
+    color:var(--heading-color);
+
+}
+
+.navbar-brand:hover{
+
+    color:var(--heading-color);
+
+}
+
+.navbar-brand span{
+
+    color:var(--primary-color);
+
+}
+
+.navbar-toggler{
+
+    border:none;
+    box-shadow:none !important;
+
+}
+
+.navbar-toggler i{
+
+    color:var(--heading-color);
+    font-size:1.5rem;
+
+}
+
+.navbar-nav{
+
+    align-items:center;
+    gap:22px;
+
+}
+
+.nav-link{
+
+    position:relative;
+
+    font-family:var(--paragraph-font);
+    font-size:var(--nav-size);
+    font-weight:var(--fw-medium);
+
+    color:var(--paragraph-color) !important;
+
+    transition:var(--transition);
+
+}
+
+.nav-link:hover{
+
+    color:var(--primary-color) !important;
+
+}
+
+.nav-link::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 100%;
+    height: 2px;
+
+    background: var(--primary-color);
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform .3s ease;
+
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+
+    transform: scaleX(1);
+
+}
+
+.resume-btn{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:150px;
+    height:48px;
+
+    background:var(--primary-color);
+
+    color:var(--white-color) !important;
+
+    border-radius:var(--radius);
+
+    font-weight:var(--fw-semibold);
+
+    transition:var(--transition);
+
+}
+
+.resume-btn:hover{
+
+    background:var(--primary-hover);
+
+    color:var(--white-color) !important;
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:991px){
+
+    .navbar{
+
+        padding:15px 0;
+
+    }
+
+    .navbar-collapse{
+
+        margin-top:20px;
+
+    }
+
+    .navbar-nav{
+
+        gap:8px;
+        align-items:flex-start;
+
+    }
+
+    .nav-link{
+
+        width:100%;
+        padding:12px 0;
+
+    }
+
+    .resume-btn{
+
+        margin-top:10px;
+
+    }
+
+}
