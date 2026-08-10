@@ -1,21 +1,15 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar(){
 
     const navRef = useRef(null);
-    const [activeSection, setActiveSection] = useState("home");
 
-    function closeMenu() {
+    function closeNav(){
         if(navRef.current.classList.contains("show")){
-            navRef.current.classList.remove("show");
+            navRef.current.classList.remove("show")
         }
     }
-
-    useEffect(() => {
-
-        const sections = document
-    });
 
     return (
         <header>
@@ -48,43 +42,43 @@ function Navbar() {
                         <ul className="navbar-nav ms-auto align-items-center">
 
                             <li className="nav-item text-center">
-                                <a className="nav-link active" href="#home" onClick={closeMenu}>
+                                <a className="nav-link" href="#home" onClick={closeNav}>
                                     Home
                                 </a>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="#about" onClick={closeMenu}>
+                                <a className="nav-link" href="#about" onClick={closeNav}>
                                     About
                                 </a>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="#education" onClick={closeMenu}>
+                                <a className="nav-link" href="#education" onClick={closeNav}>
                                     Education
                                 </a>
                             </li>
-
+                              
                             <li className="nav-item">
-                                <a className="nav-link" href="#skills" onClick={closeMenu}>
+                                <a className="nav-link" href="#skills" onClick={closeNav}>
                                     Skills
                                 </a>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="#projects" onClick={closeMenu}>
+                                <a className="nav-link" href="#projects" onClick={closeNav}>
                                     Projects
                                 </a>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="#contact" onClick={closeMenu}>
+                                <a className="nav-link" href="#contact" onClick={closeNav}>
                                     Contact
                                 </a>
                             </li>
 
                             <li className="nav-item ms-lg-3">
-                                <a href="#" className="resume-btn">
+                                <a href="#" className="resume-btn" onClick={closeNav}>
                                     Resume
                                 </a>
                             </li>
