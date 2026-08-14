@@ -6,15 +6,11 @@
 .education-timeline::before {
 
     content: "";
-
     position: absolute;
-
     top: 0;
     bottom: 0;
     left: 12px;
-
     width: 2px;
-
     background-color: var(--border-color)
 }
 
@@ -26,17 +22,15 @@
 .education-item::before {
 
     content: "";
-
     position: absolute;
-
     width: 10px;
     height: 10px;
     border-radius: 50%;
-
     top: 30px;
     left: 8px;
-
     background-color: var(--primary-hover);
+    transition: transform 0.3s ease;
+
 }
 
 .education-card {
@@ -45,6 +39,17 @@
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.education-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 15px 4px rgba(182, 93, 60, 0.51);
+}
+
+.education-item:has(.education-card:hover)::before,
+.education-item:has(.education-card:hover)::after{
+    transform: scale(1.5);
 }
 
 .education-year {
@@ -118,6 +123,7 @@
         top: 30px;
         right: -6px;
         background-color: var(--primary-hover);
+        transition: 0.3s ease-in-out;
     }
 
 }
