@@ -1,0 +1,123 @@
+.education-timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.education-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 12px;
+
+    width: 2px;
+
+    background-color: var(--border-color)
+}
+
+.education-item {
+    position: relative;
+    padding-left: 40px;
+}
+
+.education-item::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    top: 30px;
+    left: 8px;
+
+    background-color: var(--primary-hover);
+}
+
+.education-card {
+    background-color: var(--card-color);
+    border: 2px solid var(--border-color);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.education-year {
+    background-color: var(--primary-hover);
+    color: var(--white-color);
+    font-weight: var(--fw-bold);
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.education-card h3 {
+    margin-top: 30px;
+    font-weight: var(--fw-bold);
+    font-size: 25px;
+    line-height: 33px;
+}
+
+.education-card h4 {
+    font-size: 18px;
+    margin: 13px 0;
+    line-height: 25px;
+}
+
+.education-card p {
+    font-size: 15px;
+}
+
+@media (min-width : 992px) {
+
+    .education-timeline::before {
+        left: 50%;
+    }
+
+    .education-item {
+        width: 50%;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+
+    .education-card {
+        width: 100%;
+    }
+
+    .education-item:nth-child(odd) {
+        padding-left: 0;
+        padding-right: 50px;
+        left: 0;
+    }
+
+    .education-item:nth-child(even) {
+        left: 50%;
+        padding-left: 50px;
+        padding-right: 0;
+    }
+
+    .education-item:nth-child(even)::before {
+        left: -4px;
+    }
+
+    .education-item:nth-child(odd)::before {
+        display: none;
+    }
+
+    .education-item:nth-child(odd)::after {
+
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        top: 30px;
+        right: -6px;
+        background-color: var(--primary-hover);
+    }
+
+}
