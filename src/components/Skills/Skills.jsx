@@ -43,7 +43,7 @@ function Skills() {
                 <div className="skills-title text-center">
                     <p className="hero-subtitle">SKILLS</p>
                     <h2 className="hero-title">Technologies I Work With</h2>
-                    <p className="">I use modern technologies and tools to build clean, responsive and user-friendly web applications.</p>
+                    <p className="skill-p margin-para">I use modern technologies and tools to build clean, responsive and user-friendly web applications.</p>
                 </div>
                 <div className="skills-cards row g-4 mt-5 justify-content-center">
                     {

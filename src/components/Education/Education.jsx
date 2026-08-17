@@ -8,7 +8,7 @@ function Education() {
                 <div className="education-heading text-center">
                     <p className="hero-subtitle">EDUCATION</p>
                     <h2 className="hero-title">My Academic Journey</h2>
-                    <p className="hero-p mx-auto">A journey of learning, building and continuously growing.</p>
+                    <p className="margin-para">A journey of learning, building and continuously growing.</p>
                 </div>
                 <div className="education-timeline">
                     <div className="education-item">
