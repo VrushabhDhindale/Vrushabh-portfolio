@@ -96,7 +96,7 @@ function Project() {
             technologies: ["HTML", "CSS"],
 
             live: "https://all-food-template.netlify.app/",
-            github: "YOUR_GITHUB_LINK"
+            github: "https://github.com/VrushabhDhindale/all-food.git"
         },
 
         {
