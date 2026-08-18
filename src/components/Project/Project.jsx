@@ -16,7 +16,7 @@ import digitalclockjs from "../../assets/images/illustrator/digitalclockjs.png";
 import clickgamejs from "../../assets/images/illustrator/clickgamejs.png";
 import calculatorjs from "../../assets/images/illustrator/calculatorjs.png";
 import guessmynumberjs from "../../assets/images/illustrator/guessmynumberjs.png";
-import allFood from "../../assets/images/illustrator/all-food.png";
+import allfood from "../../assets/images/illustrator/all-food.png";
 
 function Project() {
 
