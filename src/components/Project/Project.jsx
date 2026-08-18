@@ -16,6 +16,7 @@ import digitalclockjs from "../../assets/images/illustrator/digitalclockjs.png";
 import clickgamejs from "../../assets/images/illustrator/clickgamejs.png";
 import calculatorjs from "../../assets/images/illustrator/calculatorjs.png";
 import guessmynumberjs from "../../assets/images/illustrator/guessmynumberjs.png";
+import allFood from "../../assets/images/illustrator/all-food.png";
 
 function Project() {
 
@@ -83,6 +84,19 @@ function Project() {
 
             live: "https://bigspring-template.netlify.app/",
             github: "https://github.com/VrushabhDhindale/bigSpring.git"
+        },
+
+        {
+            title: "All Food",
+            description: "A responsive restaurant website featuring food menus, restaurant information, table booking, services, newsletter subscription, and a recent blog section.",
+            image: allfood,
+
+            category: "CSS",
+
+            technologies: ["HTML", "CSS"],
+
+            live: "https://all-food-template.netlify.app/",
+            github: "YOUR_GITHUB_LINK"
         },
 
         {
