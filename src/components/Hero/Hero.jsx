@@ -19,8 +19,8 @@ function Hero() {
                         </h1>
                         <p className="hero-p">I build modern, responsive and user-friendly websites with HTML, CSS, Bootstrap, JavaScript and React.</p>
                         <div className="button-grp d-flex gap-3">
-                            <button type="button" className="viewProject fw-bold">View Project</button>
-                            <button type="button" className="contactMe fw-bold">Contact me</button>
+                            <button type="button" className="viewProject fw-bold"><a href="#project">View Project</a></button>
+                            <button type="button" className="contactMe fw-bold"><a href="#contact">Contact me</a></button>
                         </div>
                     </div>
                     <div className="col-12 col-lg-6 d-flex justify-content-center mt-5 mt-lg-0 heroCardIn">

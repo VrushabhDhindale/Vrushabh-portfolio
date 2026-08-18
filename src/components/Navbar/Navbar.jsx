@@ -1,12 +1,12 @@
 import { useRef } from "react";
 import "./Navbar.css";
 
-function Navbar(){
+function Navbar() {
 
     const navRef = useRef(null);
 
-    function closeNav(){
-        if(navRef.current.classList.contains("show")){
+    function closeNav() {
+        if (navRef.current.classList.contains("show")) {
             navRef.current.classList.remove("show")
         }
     }
@@ -58,7 +58,7 @@ function Navbar(){
                                     Education
                                 </a>
                             </li>
-                              
+
                             <li className="nav-item">
                                 <a className="nav-link" href="#skills" onClick={closeNav}>
                                     Skills
@@ -66,7 +66,7 @@ function Navbar(){
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="#projects" onClick={closeNav}>
+                                <a className="nav-link" href="#project" onClick={closeNav}>
                                     Projects
                                 </a>
                             </li>
@@ -78,7 +78,7 @@ function Navbar(){
                             </li>
 
                             <li className="nav-item ms-lg-3">
-                                <a href="#" className="resume-btn" onClick={closeNav}>
+                                <a href="../../../public/Vrushabh_Dhindale_Resume_Final.pdf" className="resume-btn" onClick={closeNav} download>
                                     Resume
                                 </a>
                             </li>
