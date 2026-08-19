@@ -78,7 +78,7 @@ function Navbar() {
                             </li>
 
                             <li className="nav-item ms-lg-3">
-                                <a href="../../../public/Vrushabh_Dhindale_Resume_Final.pdf" className="resume-btn" onClick={closeNav} download>
+                                <a href="/Vrushabh_Dhindale_Resume_Final.pdf" className="resume-btn" onClick={closeNav} download>
                                     Resume
                                 </a>
                             </li>

@@ -33,7 +33,7 @@ function About() {
                                 </div>
                             </div>
                         </div>
-                        <button type="button" className="about-btn"><a href="../../../public/Vrushabh_Dhindale_Resume_Final.pdf" download>Download Resume</a></button>
+                        <button type="button" className="about-btn"><a href="/Vrushabh_Dhindale_Resume_Final.pdf" download>Download Resume</a></button>
                     </div>
                 </div>
             </div>
