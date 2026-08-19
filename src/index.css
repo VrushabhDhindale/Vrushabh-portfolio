@@ -137,7 +137,7 @@ section {
 
 }
 
-.margin-para{
+.margin-para {
     margin: 30px 0;
 }
 
@@ -168,6 +168,7 @@ section {
         transform: scaleX(1);
     }
 }
+
 /* ===========================
         HERO ANIMATION
 =========================== */
@@ -236,40 +237,35 @@ section {
     }
 
 }
-/* universal sroll */
 
-/* ===========================
-   UNIVERSAL SCROLL ANIMATION
-=========================== */
-
-/* ===========================
-   UNIVERSAL SCROLL ANIMATION
-=========================== */
+/* =============================================== */
+/*                 scroll animation  */
+/* =============================================== */
 
 .scroll-animation {
-    animation: revealUp linear both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation: scrollReveal linear both;
+    animation-timeline: view(block);
+    animation-range: entry 20% exit 80%;
 }
 
-@keyframes revealUp {
-
+@keyframes scrollReveal {
     0% {
         opacity: 0;
-        transform: translateY(60px) scale(.96);
-        filter: blur(8px);
+        transform: translateY(40px);
     }
 
-    60% {
+    20% {
         opacity: 1;
-        transform: translateY(0) scale(1);
-        filter: blur(0);
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-        filter: blur(0);
+        opacity: 0;
+        transform: translateY(-40px);
     }
-
 }

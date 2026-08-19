@@ -1,9 +1,10 @@
 import "./About.css";
+import { projects } from "../Project/Project";
 import aboutImg from "../../assets/images/illustrator/about-me-1img.png";
 
 function About() {
     return(
-        <section className="about-section about" id="about">
+        <section className="about-section about scroll-animation" id="about">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-12 col-lg-6 scroll-animation">
@@ -16,7 +17,7 @@ function About() {
                         <div className="row text-center g-4">
                             <div className="col-6 col-lg-4">
                                 <div className="about-card">
-                                    <h3>12+</h3>
+                                    <h3>{projects.length - 1}+</h3>
                                     <p>Projects</p>
                                 </div>
                             </div>

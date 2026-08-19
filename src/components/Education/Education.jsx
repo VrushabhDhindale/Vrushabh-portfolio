@@ -18,7 +18,7 @@ function Education() {
     ];
 
     return (
-        <section className="education-section" id="education">
+        <section className="education-section scroll-animation" id="education">
             <div className="container">
 
                 <div className="education-heading text-center">

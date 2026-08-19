@@ -29,7 +29,7 @@ function Contact() {
     };
 
     return (
-        <section className="contact-section" id="contact">
+        <section className="contact-section scroll-animation" id="contact">
             <div className="container">
                 <div className="row">
                     <div className="contact-right col-12 col-md-6">

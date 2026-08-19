@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer() {
 
     return (
-        <footer>
+        <footer className="scroll-animation">
             <div className="container">
                 <div className="footer-title">
                     <h2>Vrushabh<span>.</span></h2>

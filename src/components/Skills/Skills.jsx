@@ -38,7 +38,7 @@ function Skills() {
     ]
 
     return (
-        <section className="skills-section" id="skills">
+        <section className="skills-section scroll-animation" id="skills">
             <div className="container">
                 <div className="skills-title text-center">
                     <p className="hero-subtitle">SKILLS</p>
