@@ -1,7 +1,34 @@
-.scroll-animation{
-    animation-range: entry 0% exit 80%;
+.project-item {
+    position: relative;
 }
 
+.project-card {
+    animation: projectReveal linear both;
+    animation-timeline: view(block);
+    animation-range: entry 0% exit 100%;
+}
+
+@keyframes projectReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
 .filter-btn {
     border: 2px solid var(--primary-color);
     color: var(--primary-color);

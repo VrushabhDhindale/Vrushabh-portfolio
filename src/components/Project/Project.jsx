@@ -233,7 +233,7 @@ function Project() {
     }, []);
 
     return (
-        <section className="project-section scroll-animation" id="project">
+        <section className="project-section" id="project">
             <div className="container">
                 <div className="project-heading text-center">
                     <p className="hero-subtitle">My Work</p>
