@@ -1,3 +1,7 @@
+.scroll-animation{
+    animation-range: entry 0% exit 80%;
+}
+
 .filter-btn {
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
